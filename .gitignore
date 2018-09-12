@@ -1,0 +1,8 @@
+/node_modules
+/.idea
+/.vscode
+/dist.zip
+*.sqlite
+out-*.js
+public/public.zip
+
