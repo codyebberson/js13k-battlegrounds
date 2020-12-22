@@ -8,6 +8,17 @@ Entry for the [js13kGames Competition](http://js13kgames.com/).
 
 Based on the [js13kserver](https://github.com/js13kGames/js13kserver) starter project.
 
+## Post-Compo Update
+
+For original submission, see the `submission` branch.
+
+The master branch received the following updates:
+* Upgraded dependencies
+* Upgraded boilerplate to 2020 competition version
+* Removed the bash and Java build system
+* Replaced with npm based build system
+* Eliminated need for the js13k-battlegrounds-out sister project
+
 ## Install
 
 Clone and install with npm:
@@ -24,24 +35,21 @@ Run the server locally with the following command:
 
 Open server at [http://localhost:3000](http://localhost:3000)
 
+## Running dev mode
+
+Run the server + watch source files + recompile:
+
+    npm run dev
+
+Open server at [http://localhost:3000](http://localhost:3000)
+
 ## Building
 
-First clone and install the sister project, [js13k-battlegrounds-out](https://github.com/codyebberson/js13k-battlegrounds-out).  The two projects ("js13k-battlegrounds" and "js13k-battlegrounds-out") must be sibling directories.
+Compile and build zip file:
 
-    git clone git@github.com:codyebberson/js13k-battlegrounds-out.git
-    cd js13k-battlegrounds-out
-    npm install
+    npm run build
 
-With that in place, you can now navigate to the "public" directory and build:
-
-    cd ../js13k-battlegrounds/public
-    ./build.sh
-
-The build script does the following:
-1) Uses Google Closure to create shared.js, client.js, and server.js
-2) Copies the minified output to the "out" project
-3) Creates a new public.zip file
-4) Reports size statistics
+Creates a new public.zip file
 
 ## Postmortem
 

@@ -19,3 +19,5 @@
 *.xcf    binary
 *.zip    binary
 
+package-lock.json -diff
+public/*.js -diff

@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha test"
+    "test": "mocha test",
+    "dev": "node index.js --watch",
+    "build": "node build.js"
   },
   "keywords": [
     "js13kgames",
@@ -25,6 +27,8 @@
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
+    "chokidar": "^3.4.3",
+    "google-closure-compiler": "^20201207.0.0",
     "mocha": "^8.2.1"
   }
 }
