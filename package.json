@@ -24,7 +24,7 @@
     "express-session": "^1.17.1",
     "sequelize": "^6.3.5",
     "socket.io": "^3.0.4",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.3"
   },
   "devDependencies": {
     "chokidar": "^3.4.3",
